@@ -4,7 +4,9 @@
 
 Containers are an open-source project that allows developers to easily automate the deployment of their software applications by providing an additional layer of abstraction and automation of OS-level virtualization, one such example of containers is Docker.
 
-The key benefits of Docker containers is that it allows users to package an application with all of its dependencies into a standardized unit for software development. Unlike virtual machines, containers do not have the high overhead and hence enable more efficient usage of the underlying system and resources. For more information on Docker see: [Docker Resources](https://www.docker.com/resources/what-container)
+The key benefits of Docker containers is that it allows users to package an application with all of its dependencies into a standardized unit for software development. Unlike virtual machines, containers do not have the high overhead and hence enable more efficient usage of the underlying system and resources. 
+
+For more information on Docker see: [Docker Resources](https://www.docker.com/resources/what-container)
 
 Essentially Docker allows you to wrap up a piece of software in a complete filesystem alongside all dependencies that the application needs in order to run; for example the code, the system libraries, the runtime environment, any binaries, anything you can install on a server, and docker allows you to wrap this all up into what is known as a software container.
 
@@ -31,7 +33,7 @@ Containers take a different approach: by leveraging the low-level mechanics of t
 
 For example, take a look at the image below:
 
-![alt text](../../InstructorNotes/Images/Container-vs-VMs.jpg "VMs vs. Containers")
+![alt text](../../InstructorNotes/Images/docker_vm_1.png "VMs vs. Containers")
 
 In the VM world, each VM includes the application, the necessary binaries & libraries and an entire operating system, which can amount to tens of GBs.
 

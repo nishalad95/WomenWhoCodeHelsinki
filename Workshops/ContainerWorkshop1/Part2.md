@@ -10,13 +10,13 @@ Due to these benefits, containers (& Docker) have seen widespread adoption. Comp
 
 Some of the key uses of containers are:
 
-* Development:
+* ___Development:___
   * Developing & building applications across many different host 0Ss and infrastructure
-* Building out CI/CD pipelines:
+* ___Building out CI/CD pipelines:___
   * Encouraging a more productive & agile developer environment in the DevOps industry
   * Consistent container image moveing through the pipeline
   * Preventing "it worked in dev" syndrome
-* Application Modernization & Portability:
+* ___Application Modernization & Portability:___
   * Used highly when moving application from on-prem to the cloud
 
 In organizations that adopt Docker, deployments tend to increase steadily in scale long after the initial rollout. Deployments are also growing faster than they have in the past—the average size of a 10-month-old Docker deployment has increased 75% since last year.
@@ -24,5 +24,7 @@ In organizations that adopt Docker, deployments tend to increase steadily in sca
 ![alt text](../../InstructorNotes/Images/docker-deployment-percentage.png)
 
 <A couple example use cases?>
+
+- netflix
 
 Continue to [Part 3](Part3.md)

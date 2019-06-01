@@ -4,6 +4,9 @@
 
 In the last section, we used a lot of Docker-specific jargon which might be confusing to some. So before we go further, lets clarify some terminology that is used frequently in the Docker ecosystem.
 
+![alt text](../../InstructorNotes/Images/docker_components_1.png)
+![alt text](../../InstructorNotes/Images/docker_components_2.png)
+
 * ___Images___ - The blueprints of our application which form the basis of containers. In the demo above, we used the `docker pull` command to download the busybox image. Images produce a container when they run. Or you can pull an existing image from DockerHub; python image, Ubuntu image, your own application, there are hundreds. Sort of like a snapshot of the current version of the application before it has run. Once the image is on DockerHub a server can pull it, or you can run it locally on another person’s laptop. Because they can become quite large, images are designed to be composed of layers of other images, so it’s really easy to make a new image.
 
 * ___Containers___ - Created from Docker images and run the actual application. We create a container using `docker run` which we did using the busybox image that we downloaded. A list of running containers can be seen using the docker ps command. Containers share the kernel with other containers. It runs as an isolated process in user space on the host OS.
@@ -19,10 +22,9 @@ There is also one other concept which we need to know that will help us build ou
 
 * ___Dockerfile___ - To get started in deploying your apps using containers; everything starts with the Dockerfile that packages all the dependencies into 1 standardized unit.  The Dockerfile contains references to all source code, any installations, such as Node.js or other programs. Once the Dockerfile is created, you run a docker build command to create the docker image of the container.
 
+![alt text](../../InstructorNotes/Images/docker_architecture.png)
 
-TODO: explain the image below
-
-![alt text](../../InstructorNotes/Images/Docker1.png)
+So looking at the image above, we can see the common commands you might run `docker build`, `docker pull` and `docker run` all applied to you docker image. We can see an overview of Docker Architecture, how the daemon interacts with the images to run them on containers on the host and how images can be pushed & pulled from online registries.
 
 ## Lifecycle
 
