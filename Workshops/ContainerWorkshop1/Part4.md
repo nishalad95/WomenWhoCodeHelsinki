@@ -26,7 +26,7 @@ This message shows that your installation appears to be working correctly.
 ...
 ```
 
-## Wokrshop 1: Playing with BusyBox
+## Workshop 1: Playing with BusyBox
 
 Now that we have everything setup, it's time to get our hands dirty. In this section, we are going to run a Busybox container on our system and get a taste of the `docker run` command. 
 

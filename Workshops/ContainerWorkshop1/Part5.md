@@ -22,7 +22,7 @@ There is also one other concept which we need to know that will help us build ou
 
 TODO: explain the image below
 
-![alt text](../instuctorNotes/Images/Docker1.png)
+![alt text](../../InstructorNotes/Images/Docker1.png)
 
 ## Lifecycle
 
@@ -32,6 +32,6 @@ You begin by creating your Dockerfile and referencing all software dependencies 
 
 You then run a docker build command to create the docker image. From there you can push your image to an online registry such as Docker Hub, you can also run your image in a container, you can stop, start or restart the container and also save and load your image to backup storage.
 
-![alt text](../instuctorNotes/Images/Docker2.png)
+![alt text](../../InstructorNotes/Images/Docker2.png)
 
-Continue to [Part 6](Part6.md)
+Continue to [Part 6](../ContainerWorkshop2/Part6.md)

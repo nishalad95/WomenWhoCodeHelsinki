@@ -4,9 +4,11 @@
 
 - cat giphy demo
 - explain what a dockerfile is, how to create one and containerize the whole thing and run it
-- they can create their own dockerfile
+
 
 Great! So we have now looked at `docker run`, played with a Docker container and also got a hang of some terminology. Armed with all this knowledge, we are now ready to get to the real-stuff, i.e. deploying web applications with Docker!
+
+Here we're going to create our own Dockerfile.
 
 #### Static Sites:
 
@@ -45,7 +47,7 @@ You can also specify a custom port to which the client will forward connections 
 $ docker run -p 8888:80 prakhar1989/static-site
 Nginx is running...
 ```
-![alt text](../instuctorNotes/Images/static.png)
+![alt text](../../InstructorNotes/Images/static.png)
 
 To stop a detached container, run `docker stop` by giving the container ID. In this case, we can use the name `static-site` we used to start the container.
 

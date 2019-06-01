@@ -158,4 +158,4 @@ TODO: docker logs
 
 TODO: add in helpful links to docker docs and other sites
 
-Continue to [Part 9](Part9.md)
+Continue to [Part 9](../ContainerWorkshop3/Part9.md)

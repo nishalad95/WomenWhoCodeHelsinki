@@ -8,7 +8,7 @@ The key benefits of Docker containers is that it allows users to package an appl
 
 Essentially Docker allows you to wrap up a piece of software in a complete filesystem alongside all dependencies that the application needs in order to run; for example the code, the system libraries, the runtime environment, any binaries, anything you can install on a server, and docker allows you to wrap this all up into what is known as a software container.
 
-![alt text](../instuctorNotes/Images/container-what-is-container.png)
+![alt text](../../InstructorNotes/Images/container-what-is-container.png)
 
 This means that it guarantees the application will run the exact same regardless of the underlying infrastructure and is independent of the underlying OS. So you don’t get any OS specific compilation problems or runtime errors when running the application.
 
@@ -31,7 +31,7 @@ Containers take a different approach: by leveraging the low-level mechanics of t
 
 For example, take a look at the image below:
 
-![alt text](../InstructorNotes/Images/Container-vs-VMs.jpg "VMs vs. Containers")
+![alt text](../../InstructorNotes/Images/Container-vs-VMs.jpg "VMs vs. Containers")
 
 In the VM world, each VM includes the application, the necessary binaries & libraries and an entire operating system, which can amount to tens of GBs.
 
