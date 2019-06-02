@@ -2,7 +2,7 @@
 
 We're now going to go through a few concepts about the Kubernetes architecture which we have brushed over previously.
 
-Kubernetes is composed by primitives, we have previously learned about:
+Kubernetes is composed of primitives, we have previously learned about:
 
 - Pods - collections of containers which share the same IP address
 - Nodes - machines on which multiple pods may live
@@ -36,10 +36,6 @@ Every other node in the cluster runs two processes:
 
 The Kubernetes DNS service creates a DNS Pod and Service on the cluster in order for each individual container to tbe able
 to resolve DNS names by using the DNS Service's IP address.
-
-#### Controllers
-
-We have already talked about a few controllers,
 
 #### etcd
 
