@@ -27,13 +27,4 @@ more granularly. A secondary advantage is that quality assurance is being done o
 improves customer satisfaction. With the advent of Kubernetes, practicing a Devops methodology has become a lot easier.
 Developers can write, test, roll out, and roll back features if necessary, all in one day.
 
-
--- https://www.stratoscale.com/blog/kubernetes/auto-healing-containers-kubernetes/
-TODO: Mention here self-healing and automated rollouts and rollbacks
-
-TODO: It is important to note that this approach might not always be suited to a product.
-
-### TODO: Monitoring and logging
-### TODO: Security
-
 Continue to [Chapter 3](chapter3.md)

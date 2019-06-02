@@ -1,9 +1,10 @@
-## Launching a Kubernetes Cluster with minikube
+### Launching a Kubernetes Cluster with minikube
 
 
 Minikube allows you to try out Kubernetes on your local machine. It spins up a VM in which it runs a single-node Kubernetes cluster.
 You can find more details about it here: https://github.com/kubernetes/minikube
 
+#### Step1: Launch Minikube
 First of all let's make sure minikube is installed, we can verify that by getting the version:
 
 ```bash
@@ -29,6 +30,7 @@ NAME        STATUS      ROLES       AGE     VERSION
 minikube    Ready       master      2m      v.14.0
 ```
 
+#### Step 2: Deploy nginx
 As there's only one node running in the cluster, the node will also be the master node. We can now deploy a container to the Kubernetes cluster from the CLI:
 ```bash
 $ kubectl run nginx-deployment --image=nginx --port=80
@@ -54,14 +56,17 @@ NAME                                 READY      STATUS       RESTARTS     AGE
 nginx-deployment-668774d484-zkbzc    1/1        Running      0            3m40s  
 ```
 
+#### Step 3: Deploy a service
 Now that the container is running we need a way of accessing it. We can use the NodePort service which is going to open
 a port to the container:
 ```bash
 $ kubectl expose deployment first-deployment --port=80 --type=NodePort
 ```
 
-TIP: Use **kubectl describe <object_type> <object_name>** to get a thorouhg description of an object.
+You should be able to curl the container:
 
 ```bash
-$ kubectl scale --replicas=3 deployment http
+$ curl localhost
 ```
+TIP: Use **kubectl describe <object_type> <object_name>** to get a thorough description of an object.
+
