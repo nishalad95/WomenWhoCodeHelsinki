@@ -17,7 +17,7 @@ Users expect your application to be always available. This can be really challen
 or rolling out updates. In the past maintenance, upgrades, and security patches would cut into the uptime of the application.
 
 Developers expect to be able to deploy updates to their code multiple times per day. That is perfectly normal, it’s 
-our job. You wouldn’t want to implement a bunch of features and then not be able to deploy or test your code until an 
+our job. You would not want to implement a bunch of features and then not be able to deploy or test your code until an 
 update patch.
 
 Containerization packages software to help serve these goals, enabling applications to be released and updated easily,
@@ -35,7 +35,7 @@ is developed and deployed into production has fundamentally changed.
 
 As software systems become more complicated, this complication has driven software to be divided into smaller pieces such 
 as microservices. These smaller pieces of software each need to be packaged, built, deployed, and accessed by other pieces 
-of software around them to function as a whole. These small pieces of software can be deployed on demand in containers
+of software around them to function as a whole. Microservices can be deployed on demand in containers
 in order to provide the same functionality as a monolithic service.
 
 The need for container orchestration arose from the breakdown of monolithic services into smaller services. Kubernetes

@@ -15,11 +15,43 @@ a web application stack might consist of three separate containers, each with it
 database, and an in-memory cache in a decoupled manner.
 
 The cool thing about Kubernetes is that you can put your app in one container and you can also have a second containerised application,
-such as a database, which sits next to the other one in what is called a pod. Therefore, a pod is a group of containers and 
-those containers see each other as localhost. You can have your app running by itself, nginx running by itself and they
+such as a database, which sits next to the other one in a pod. A pod is a group of containers where the containers see each other as localhost. 
+Each pod gets assigned an IP address, and the containers within it all share that IP address. Two apps running independently in a pod
 will know about each other as if they were the same entity.
 
 Applications within a Pod also have access to shared volumes, which are defined as part of a Pod and are made available to be mounted into each application’s filesystem.
+The following is an example from the Kubernetes documentation of two containers with a shared Volume called shared_data.
+
+```yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: two-containers
+spec:
+
+  restartPolicy: Never
+
+  volumes:
+  - name: shared-data
+    emptyDir: {}
+
+  containers:
+
+  - name: nginx-container
+    image: nginx
+    volumeMounts:
+    - name: shared-data
+      mountPath: /usr/share/nginx/html
+
+  - name: debian-container
+    image: debian
+    volumeMounts:
+    - name: shared-data
+      mountPath: /pod-data
+    command: ["/bin/sh"]
+    args: ["-c", "echo Hello from the debian container > /pod-data/index.html"]
+```
+
 In terms of Docker constructs, a Pod is modelled as a group of Docker containers with shared namespaces and shared filesystem volumes.
 
 Pods are ephemeral entities, this means that if a pod dies, then all the information stored on it will be lost.
@@ -27,7 +59,6 @@ Each pod is assigned a uniqued ID, and is scheduled on a node, where it will sta
 If a Node dies, the Pods scheduled to that node are scheduled for deletion, after a timeout period. A given Pod is not
 “rescheduled” to a new node; instead, it can be replaced by an identical Pod,  with even the same name if desired, but with a new UID.
 
-Each pod gets assigned an IP address, and the containers within it all share that IP address.
 
 ![alt text](pods_overview.png)
 
@@ -36,6 +67,8 @@ Each pod gets assigned an IP address, and the containers within it all share tha
 Nodes can be either virtual or physical machines, for example VMs, or your local machine. Each Node can have multiple
 pods running on it. The pods are managed, and scheduled across the Nodes of a cluster by the Kubernetes master. 
 
+![alt text](nodes_overview.png)
+
 Think of a node as a machine which has a specific set of resources you have assigned to it. Each node therefore has a capacity
 measure which describes its resources: CPU, memory, and the number of pods that can be scheduled onto it.
 
@@ -43,8 +76,6 @@ We are going to go through a few demos soon where we'll be using minikube. Minik
 cluster on our machine which means it can only run a single node. A single node is not very useful, the purpose of
 Kubernetes is to pool together multiple nodes to form a more powerful machine. In order to create a multi-node cluster, you will have
 to sign-up for a cloud provider and use their Kubernetes service.
-
-![alt text](nodes_overview.png)
 
 A cluster contains multiple nodes, and designates a single node to be the master node. The Kubernetes master runs on this
 node and is responsible for maintaining the desired state of the cluster. Whenever you deploy an application on Kubernetes,
@@ -119,12 +150,13 @@ The way to expose them classically is through a proxy, or a load-balancer, and t
 to your servers and you’re good to go. In Kubernetes, the way that that’s done is through something called a service.
 A service is basically the analog of a load-balancer.
 
-Kubernetes pods can be scaled in and out, and can die at any time if a node restarts or dies. This leads to a problem: 
-if some set of Pods (let’s call them backends) provides functionality to other Pods (let’s call them frontends) inside 
-the Kubernetes cluster, how do those frontends find out and keep track of which backends are in that set?
+Kubernetes pods can be scaled in and out, and can die at any time if a node restarts or dies. This leads to a problem:
+suppose you have two sets of pods, the frontend and backed pods. One set of pods needs to keep track of the other
+pods somehow.
 
-Kubernetes services are an abstraction which defines a logical set of Pods and a policy by which to access them - 
-sometimes called a micro-service. As an example, consider an image-processing backend which is running with 3 replicas. 
+Kubernetes services are an abstraction which defines a logical set of Pods and a policy by which to access them.
+ 
+As an examdple, consider an image-processing backend which is running with 3 replicas. 
 Those replicas are fungible - frontends do not care which backend they use. While the actual Pods that compose the backend
 set may change, the frontend clients should not need to be aware of that or keep track of the list of backends themselves.
 The Service abstraction enables this decoupling.
@@ -147,8 +179,17 @@ spec:
 ```
 
 This specification will create a new Service object named “my-service” which targets TCP port 9376 on any Pod with the "app=MyApp" label.
-This Service will also be assigned an IP address (sometimes called the “cluster IP”).
+This Service will also be assigned an IP address (sometimes called the “cluster IP”). Therefore you can now access any
+of the Pods with the "myApp" label on the service's IP address and port 80.
 
-There are different types of services, but we'll one talk about the LoadBalancer service.
+There are three main types of Services:
+
+- ClusterIP - it exposes the service within the cluster IP space, this means that the service will only be reachable from the cluster
+
+- NodePort - it exposes the service on each Node's IP at a static port. It automatically created a ClusterIP service, to which 
+the NodePort service will route. You can then contact the NodePort service, from outside the cluster at NodeIP:NodePort
+
+- Load Balancer - it exposes the service to the outside world. It can be created by using a cloud provider's load balancer. 
+  NodePort and ClusterIP, will automatically be created
 
 Continue to [Chapter 4](chapter4.md)
