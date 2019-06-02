@@ -59,10 +59,15 @@ CMD ["python", "./app.py"]
 
 Now that we have our `Dockerfile`, we can build our image. The `docker build` command does the heavy-lifting of creating a Docker image from a `Dockerfile`.
 
-The section below shows you the output of running the same. Before you run the command yourself, make sure to replace the username with yours. This username should be the same one you created when you registered on [Docker hub](https://hub.docker.com/). If you haven't done that yet, please go ahead and create an account. The `docker build` command is quite simple - it takes an optional tag name with `-t` and a location of the directory containing the `Dockerfile`.
+The section below shows you the output of running the same. Before you run the command yourself, make sure to replace the username with yours. This `username` should be the same one you created when you registered on [Docker hub](https://hub.docker.com/). If you haven't done that yet, please go ahead and create an account. The `docker build` command is quite simple - it takes an optional tag name with `-t` and a location of the directory containing the `Dockerfile`.
 
 
-TODO: logging into their own docker hub account and pushing their image onto their account?
+We may need to use `docker login` here to login to your Docker account.
+
+```bash
+docker build -t <username>/catnip .
+```
+
 
 ```bash
 $ docker build -t prakhar1989/catnip .
@@ -98,7 +103,7 @@ $ docker run -p 8888:5000 prakhar1989/catnip
 
  The command we just ran used port 5000 for the server inside the container, and exposed this externally on port 8888. Head over to the URL with port 8888, where your app should be live.
 
-
+![alt text](../../InstructorNotes/Images/catgif.png)
 
  Congratulations! You have successfully created your first docker image.
 

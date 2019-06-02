@@ -2,10 +2,6 @@
 
 ### Workshop 2: Containerize a Webapp
 
-- cat giphy demo
-- explain what a dockerfile is, how to create one and containerize the whole thing and run it
-
-
 Great! So we have now looked at `docker run`, played with a Docker container and also got a hang of some terminology. Armed with all this knowledge, we are now ready to get to the real-stuff, i.e. deploying web applications with Docker!
 
 Here we're going to create our own Dockerfile.

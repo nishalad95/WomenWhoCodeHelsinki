@@ -141,20 +141,56 @@ HEALTHCHECK --interval=10s –timeout=3s \
 
 This says that everyone 10 seconds run the `curl` command to check that the webpage running on localhost will return a http status code: `200 OK`, meaning that everything is running as normal, but if the webpage doesn't retern a 200 status code then return a `1`.
 
-Once you start your container you can see the health status in the output. Some of the fields you may see include:
+Once you start your container you can see the health status in the output, run a `docker ps` to the see the output. Some of the fields you may see include:
 
-TODO: example output
+```bash
+CONTAINER ID        IMAGE                  COMMAND                  CREATED             STATUS                   PORTS                    NAMES
+9f89662fc56a        howchoo/docker-flask   "python app.py"          2 minutes ago       Up 2 minutes (healthy)   0.0.0.0:5555->5000/tcp   docker-flask
 
-One other useful way to access the health is through scripts and listen on the docker event API. If you see your container marked as unhealthy, then you can stop traffic going to that container.
+```
 
-TODO: demo the docker event API/screenshot
+Notice under __STATUS__, the status is Up with (healthy) next to it. The health status appears only when a health check is configured.
 
+One other useful way to access the health is through scripts and listen on the Docker event API. If you see your container marked as unhealthy, then you can stop traffic going to that container.
+
+#### Basic Example:
+
+You'll need 2 shells for this:
+
+Shell 1: Listening for events:
+```bash
+$ docker events
+```
+
+Shell 2: Start and Stop containers:
+```bash
+$ docker create --name test alpine:latest top
+$ docker start test
+$ docker stop test
+```
+
+Shell 1: (Again .. now showing events):
+```bash
+2019-01-05T00:35:58.859401177+08:00 container create 0fdb48addc82871eb34eb23a847cfd033dedd1a0a37bef2e6d9eb3870fc7ff37 (image=alpine:latest, name=test)
+2019-01-05T00:36:04.703631903+08:00 network connect e2e1f5ceda09d4300f3a846f0acfaa9a8bb0d89e775eb744c5acecd60e0529e2 (container=0fdb...ff37, name=bridge, type=bridge)
+2019-01-05T00:36:04.795031609+08:00 container start 0fdb...ff37 (image=alpine:latest, name=test)
+2019-01-05T00:36:09.830268747+08:00 container kill 0fdb...ff37 (image=alpine:latest, name=test, signal=15)
+2019-01-05T00:36:09.840186338+08:00 container die 0fdb...ff37 (exitCode=143, image=alpine:latest, name=test)
+2019-01-05T00:36:09.880113663+08:00 network disconnect e2e...29e2 (container=0fdb...ff37, name=bridge, type=bridge)
+2019-01-05T00:36:09.890214053+08:00 container stop 0fdb...ff37 (image=alpine:latest, name=test)
+```
+
+To exit the `docker events` command, use `CTRL+C`.
+
+You can also filter events by time and event criteria. For more information on the Docker events API click [here](https://docs.docker.com/engine/reference/commandline/events/).
 
 ### Statistics:
 
 TODO: docker logs
 
 ## Container Security:
+
+`docker exec`
 
 TODO: add in helpful links to docker docs and other sites
 

@@ -6,15 +6,10 @@ There are no specific skills needed for this tutorial beyond a basic comfort wit
 
 ## Prerequsities:
 
-TODO:
-- access to the VM (which has docker installed on it already)
-- or have docker installed locally on their laptop
-- have a dockerhub account
-- open up a terminal
+- Access to the VM (Or have docker installed locally on your laptop)
+- Set up a [Dockerhub](https://hub.docker.com/) account
+- Open up a terminal
 
-
-TODO:
-* Follow this hello world example with busybox image (https://docker-curriculum.com/)
 
 Once you are done installing Docker, test your Docker installation by running the following:
 

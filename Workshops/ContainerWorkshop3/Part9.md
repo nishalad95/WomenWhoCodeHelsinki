@@ -1,5 +1,5 @@
 # Part 9: 
 
-- another interactive demo, but with some errors for the to fix
+- another interactive demo, simple node todo app?
 
 Continue to [Part 10](../ContainerWorkshop4/Part10.md)

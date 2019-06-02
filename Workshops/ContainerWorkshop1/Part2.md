@@ -23,8 +23,22 @@ In organizations that adopt Docker, deployments tend to increase steadily in sca
 
 ![alt text](../../InstructorNotes/Images/docker-deployment-percentage.png)
 
-<A couple example use cases?>
+### Industry examples:
 
-- netflix
+Some businesses you may have heard of that have evolved from monolithic infrastructure to microservices in order to handle large volumes of data more effciently include Netflix, SoundCloud, Amazon & Twitter.
+
+
+#### How Netflix Handles Microservices:
+
+- Netflix started out with a monolithic infrastructure, where all engineers contributed to one single codebase, which would be deployed into production once a week
+- This meant that trying to debug a problem was difficult and there was lack of agility in their development cycle as each component was heavily interconnected
+
+![alt text](../../InstructorNotes/Images/netflix_monolithic.jpg)
+
+- As they started to become more popular, handling of network traffic and diagnosing issues became harder
+- They started to move away from this structure and into a more modular microservice structure in order to allow for ease in scalability and automation
+
+
+For more information see [here](https://www.youtube.com/watch?v=CZ3wIuvmHeM).
 
 Continue to [Part 3](Part3.md)
