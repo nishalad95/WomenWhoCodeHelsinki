@@ -5,6 +5,6 @@ TODO: Docker file with layers tutorial:
 
 Each container is an image with a readable/writeable layer on top of a bunch of read-only layers. These layers (also called intermediate images) are generated when the commands in the Dockerfile are executed during the Docker image build.
 
-Layers are neat because they can be re-used by multiple images saving disk space and reducing time to build images while maintaining their integrity.
+Layers are neat because they can be re-used by multiple images saving disk space and reducing time to build images while maintaining their integrity. You can also cache certain layers in order to make subsequent builds faster.
 
 ![alt text](../../InstructorNotes/Images/dockerfile_layers.png)
