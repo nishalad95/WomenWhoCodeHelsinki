@@ -3,7 +3,8 @@
 
 “Kubernetes is an open-source system for automating deployment, scaling and management of containerised applications.”
 
-![alt text](kube_logo.png)
+
+![alt text](../../InstructorNotes/Images/kubernetes.png)
 
 
 The previous definition is vague and might initially be quite confusing. We are going to talk about Kubernetes in
@@ -58,8 +59,6 @@ CNCF is dedicated to making cloud native computing universal and sustainable. It
 It is responsible for mediating the interaction between cloud platforms and Kubernetes. It was formed in 2015 to promote
 containers and to foster an open-source community. Its founding members include Google, RedHat, Docker, and others.
 
-![alt text](cncf.png)
-
 Just as containerisation has changed how software is developed and packaged, container orchestration is changing how containers are
 deployed and managed. Kubernetes evolved from Google's decade of experience with containers, and it was due to their 
 internal need for autonomous container management that container orchestration came to be.
@@ -87,4 +86,4 @@ the day compared to their lunch, and evening sales.
 
 If you're interested you can find real-life use cases of various companies here: https://kubernetes.io/case-studies/.
 
-Continue to [Chapter 2](chapter2.md)
+Continue to [Part 13](Part13.md)

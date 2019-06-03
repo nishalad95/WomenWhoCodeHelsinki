@@ -41,3 +41,5 @@ to resolve DNS names by using the DNS Service's IP address.
 
 etcd is a key value store which Kubernetes uses to store all cluster data. In the case of cluster failure the data will be lost, but
 you can set up a backing plan for the data.
+
+Continue to [Part 17](Part17.md)

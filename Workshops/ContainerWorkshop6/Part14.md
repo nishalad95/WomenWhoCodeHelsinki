@@ -8,7 +8,7 @@ few of these primitives now in order to understand the architecture of Kubernete
 
 Pods, as in a pod of whales or a pea pod, are collections of containers with shared storage/network.
 
-![alt text](../../orchestration/pods.png)
+![alt text](../../InstructorNotes/Images/pods.png)
 
 Decoupling applications into multiple containers makes it easier to scale horizontally and reuse containers. For instance,
 a web application stack might consist of three separate containers, each with its own unique image, to manage the web application,
@@ -61,14 +61,14 @@ If a Node dies, the Pods originally scheduled to that node are instead scheduled
 “rescheduled” to a new node; instead, it can be replaced by an identical Pod, optionally with the same name, but with a new UID.
 
 
-![alt text](../../orchestration/pods_overview.png)
+![alt text](../../InstructorNotes/Images/pods_overview.png)
 
 #### Nodes
 
 Nodes can be either virtual or physical machines. Each Node can have multiple
 pods running on it. The pods are managed, and scheduled across the Nodes of a cluster by the Kubernetes master. 
 
-![alt text](../../orchestration/nodes_overview.png)
+![alt text](../../InstructorNotes/Images/nodes_overview.png)
 
 Think of a node as a machine which has a specific set of resources you have assigned to it. Each node then has a capacity
 measure which describes its resources: CPU, memory, and the number of pods that can be scheduled onto it.
@@ -186,4 +186,4 @@ the NodePort service will route. You can then contact the NodePort service, from
   NodePort and ClusterIP, will automatically be created.
 
 
-Continue to [Chapter 4](chapter4.md)
+Continue to [Part 15](Part15.md)
