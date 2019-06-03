@@ -192,6 +192,26 @@ TODO: docker logs
 
 `docker exec`
 
+It's important to secure your container from malicious users. The first rule of containers is "Don't run as root!". By default, a container has no resource constraints! If you run as root then a potential attacker can make changes to your host system. If for some reason you must run as root then make sure to limit the resources you're assigning to the docker container.
+
+
+TODO: add sean bean picture here
+
+You can limit:
+- The amount of memory a container is allocated
+- The amount of CPU resources
+
+For example you can limit the container to 4M of memory and 50% of CPU power every second:
+
+```bash
+$ docker run --memory-swap=0 --memory=4M --cpus=".5" ubuntu
+```
+
+The memory-swap flag sets the maximum amount of excess memory that the container can write to disk when the container has used up all the RAM.
+If you don't set these resources, then an attacker could potentially consume the memory of the host machine rendering it useless. 
+
+Environment variables, use them instead of baking in confidential information into containers. 
+
 TODO: add in helpful links to docker docs and other sites
 
 Continue to [Part 9](../ContainerWorkshop3/Part9.md)
