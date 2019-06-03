@@ -1,4 +1,4 @@
-### Kubernetes Architecture
+# Part 16: Kubernetes Architecture
 
 We're now going to go through a few concepts about the Kubernetes architecture which we have brushed over previously.
 

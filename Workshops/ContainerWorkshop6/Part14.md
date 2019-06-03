@@ -1,5 +1,4 @@
-
-### Kubernetes primitives
+# Part 15: Kubernetes primitives
 
 The basic building blocks of Kubernetes are objects, or so-called Kubernetes primitives. We're going to talk about a 
 few of these primitives now in order to understand the architecture of Kubernetes and the demo more easily.
