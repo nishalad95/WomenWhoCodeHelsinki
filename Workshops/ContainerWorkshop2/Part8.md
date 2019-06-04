@@ -190,12 +190,9 @@ TODO: docker logs
 
 ## Container Security:
 
-`docker exec`
+It's important to secure your container from malicious users. The first rule of containers is "Don't run as root!". By default, a container has no resource constraints! If you run as root then a potential attacker can make changes to your host system. If for some reason you must run as root then make sure to limit the resources you're assigning to the docker container to prevent this.
 
-It's important to secure your container from malicious users. The first rule of containers is "Don't run as root!". By default, a container has no resource constraints! If you run as root then a potential attacker can make changes to your host system. If for some reason you must run as root then make sure to limit the resources you're assigning to the docker container.
-
-
-TODO: add sean bean picture here
+![alt text](../../InstructorNotes/Images/dockerroot.png)
 
 You can limit:
 - The amount of memory a container is allocated
@@ -207,11 +204,55 @@ For example you can limit the container to 4M of memory and 50% of CPU power eve
 $ docker run --memory-swap=0 --memory=4M --cpus=".5" ubuntu
 ```
 
-The memory-swap flag sets the maximum amount of excess memory that the container can write to disk when the container has used up all the RAM.
-If you don't set these resources, then an attacker could potentially consume the memory of the host machine rendering it useless. 
+The memory-swap flag sets the maximum amount of excess memory that the container can write to disk when the container has used up all the RAM. If you don't set these resources, then an attacker could potentially consume the memory of the host machine rendering it useless. 
 
-Environment variables, use them instead of baking in confidential information into containers. 
+When you work with containers you have to be aware of the possibility of someone using it maliciously. You need to limit the options the attacker has to do any damage. Apart from limiting the resources of a container, you should also be careful about putting any secrets, such as passwords or private keys, in the container. Baked in secrets are going to be accessible by anyone who has access to the image.
 
-TODO: add in helpful links to docker docs and other sites
+Don't worry, there are ways you can deal with this:
+1. Environment variables
+2. Docker Secrets
+3. Other secret management tools
+
+You can provide the environment variables at runtime. For example, the mysql image requires you to provide a password at runtime which you can set through an environment variable:
+
+```bash
+$ docker run mysql
+error: database is uninitialized and password option is not specified 
+  You need to specify one of MYSQL_ROOT_PASSWORD, MYSQL_ALLOW_EMPTY_PASSWORD and MYSQL_RANDOM_ROOT_PASSWORD
+```
+
+```bash
+$ docker run -e MYSQL_ROOT_PASSWORD=asecret mysql
+Initializing database
+2019-06-04T19:44:42.017324Z 0 [Warning] [MY-011070] [Server] 'Disabling symbolic links using --skip-symbolic-links (or equivalent) is the default. Consider not using this option as it' is deprecated and will be removed in a future release.
+2019-06-04T19:44:42.017422Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.16) initializing of server in progress as process 29
+2019-06-04T19:44:45.301221Z 5 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+2019-06-04T19:44:47.164931Z 0 [System] [MY-013170] [Server] /usr/sbin/mysqld (mysqld 8.0.16) initializing of server has completed
+Database initialized
+MySQL init process in progress...
+
+```
+
+Environment variables are really helpful, but you still have to be careful when using them as they can be viewed by anyone with access to the host with: ‘docker inspect <container id>’. Now it's your turn- run an image with the environment variables and check if they're set!
+You can use Docker secrets to manage your private data and to transmit it securely to the container. Secrets are encrypted when transmitted and while at rest in a Docker swarm. In order for a container to use a secret it needs to have been given permission first.
+
+Alternatively, you could use the secrets storage orchestration tool offer. Kubernetes for example, allows you to create secrets to contain sensitive information.
+
+TODO: get them to create a secret
+
+Another useful tip is to use the .dockerignore file to ignore files and directories which you don't want to include in the final image. This way you're ensuring large or sensitive files and directories won't be accidentally added. The Docker CLI looks up the .dockerignore file before it sends any context to the docker daemon and, if it finds it, modifies the context to exclude the files and directories that match the patterns in it.
+
+TODO: get them do write a mini file to exclude smth specific
+
+This is an example of a .dockerignore file:
+
+```text
+# Exclude all .pem, and .wad files, but include the DOOM.wad file
+*.pem
+*.wad
+!DOOM.wad
+```
+
+`docker exec`
 
 Continue to [Part 9](../ContainerWorkshop3/Part9.md)
