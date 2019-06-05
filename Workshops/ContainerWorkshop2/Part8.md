@@ -192,8 +192,6 @@ TODO: docker logs
 
 It's important to secure your container from malicious users. The first rule of containers is "Don't run as root!". By default, a container has no resource constraints! If you run as root then a potential attacker can make changes to your host system. If for some reason you must run as root then make sure to limit the resources you're assigning to the docker container to prevent this.
 
-![alt text](../../InstructorNotes/Images/dockerroot.png)
-
 You can limit:
 - The amount of memory a container is allocated
 - The amount of CPU resources
@@ -252,6 +250,8 @@ This is an example of a .dockerignore file:
 *.wad
 !DOOM.wad
 ```
+
+TODO: keep your software uptdated, use a third-party vulnerability scanner, container privileges
 
 `docker exec`
 
