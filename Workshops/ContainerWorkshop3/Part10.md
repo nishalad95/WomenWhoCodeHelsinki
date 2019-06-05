@@ -1,6 +1,6 @@
-# Part 11: Summary
+# Part 10: Summary
 
-That's the end of our Container workshops using Docker!
+That's the end of our Container workshops using Docker! :-)
 
 In summary, Docker's functionality falls into several catergories:
 

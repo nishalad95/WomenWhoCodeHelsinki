@@ -194,4 +194,12 @@ TODO: docker logs
 
 TODO: add in helpful links to docker docs and other sites
 
+### Layers
+
+Each container is an image with a readable/writeable layer on top of a bunch of read-only layers. These layers (also called intermediate images) are generated when the commands in the Dockerfile are executed during the Docker image build.
+
+Layers are neat because they can be re-used by multiple images saving disk space and reducing time to build images while maintaining their integrity. You can also cache certain layers in order to make subsequent builds faster.
+
+![alt text](../../InstructorNotes/Images/dockerfile_layers.png)
+
 Continue to [Part 9](../ContainerWorkshop3/Part9.md)
