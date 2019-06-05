@@ -15,6 +15,8 @@ Kubernetes is composed of primitives, we have previously learned about:
 In order to interact with these objects you must be able to communicate with the Kubernetes API. The typical way
 to interact with the API is by using the command-line interface **kubectl**. 
 
+![alt text](../../InstructorNotes/Images/kubectl_cheatsheet.png)
+
 #### Kubernetes Control Plane
 
 The Control Plane is a collection of continuously running process which make sure the state of the cluster is always correct.
@@ -41,5 +43,7 @@ to resolve DNS names by using the DNS Service's IP address.
 
 etcd is a key value store which Kubernetes uses to store all cluster data. In the case of cluster failure the data will be lost, but
 you can set up a backing plan for the data.
+
+![alt text](../../InstructorNotes/Images/kubernetes_architecture.png)
 
 Continue to [Part 17](Part17.md)

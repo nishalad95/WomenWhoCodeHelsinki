@@ -22,6 +22,7 @@ Applications within a Pod also have access to shared volumes, which are defined 
 to be mounted into each application’s filesystem.
 The following is an example from the Kubernetes documentation of two containers with a shared Volume called shared_data.
 
+
 ```yaml
 apiVersion: v1
 kind: Pod
