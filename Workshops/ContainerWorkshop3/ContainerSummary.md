@@ -2,7 +2,7 @@
 
 That's the end of our Container workshops using Docker! :-)
 
-In summary, Docker's functionality falls into several catergories:
+In summary, Docker's functionality falls into several categories:
 
 - Portable deployment of applications as a single object
 - Simplifying Configuration
@@ -21,6 +21,7 @@ Useful links for further info:
 - [Docker API docs](https://docs.docker.com/)
 - [Namespaces and cgroups](https://medium.com/@nagarwal/understanding-the-docker-internals-7ccb052ce9fe)
 - [Katacoda Container tutorials](https://www.katacoda.com/courses/docker)
+- [Containers from Scratch](https://www.youtube.com/watch?v=_TsSmSu57Zo)
 
 
 We will shortly be moving onto Container Orchestration, with a short workshop on using Kubernetes.
