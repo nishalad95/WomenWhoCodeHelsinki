@@ -45,4 +45,4 @@ However, Containers are not tied to any specific infrastructure. Docker containe
 
 Containers can run on any computer, infrastructure and the cloud.
 
-Continue to [Part 2](Part2.md)
+Continue to [Part 2](ContainerTheoryPart2.md)
