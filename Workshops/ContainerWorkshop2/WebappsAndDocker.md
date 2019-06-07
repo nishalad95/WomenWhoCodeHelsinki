@@ -20,7 +20,7 @@ Since the image doesn't exist locally, the client will first fetch the image fro
 
 How can we see the website? What port is it running on? And more importantly, how do we access the container directly from our host machine? Hit `Ctrl+C` to stop the container. 
 
-This is where we have to talk about Container Networking. By default, when you create a container, it does not publish any of its ports to the outside world. To make a port available to services outside of Docker, or to Docker containers which are not connected to the container’s network, use the --publish or -p flag. This creates a firewall rule which maps a container port to a port on the Docker host.
+This is where we have to talk about Container Networking. By default, when you create a container, it does not publish any of its ports to the outside world. To make a port available to services outside of Docker, or to Docker containers which are not connected to the container’s network, use the --publish or -p flag. This allows traffic to flow from the container to the outside world.
 
 Well in our case, the client is not exposing any ports so we need to re-run the `docker run` command to publish ports. While we're at it, we should also find a way so that our terminal is not attached to the running container. This way, you can happily close your terminal and keep the container running. This is called __detached__ mode.
 
