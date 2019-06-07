@@ -202,4 +202,4 @@ Layers are neat because they can be re-used by multiple images saving disk space
 
 ![alt text](../../InstructorNotes/Images/dockerfile_layers.png)
 
-Continue to [Part 9](../ContainerWorkshop3/Part9.md)
+Continue to [Part 9](../ContainerWorkshop3/DockerizeContainer.md)

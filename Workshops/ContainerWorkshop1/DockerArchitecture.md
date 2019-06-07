@@ -36,4 +36,4 @@ You then run a docker build command to create the docker image. From there you c
 
 ![alt text](../../InstructorNotes/Images/Docker2.png)
 
-Continue to [Part 6](../ContainerWorkshop2/Part6.md)
+Continue to [Part 6](../ContainerWorkshop2/WebappsAndDocker.md)

@@ -37,17 +37,6 @@ Training should end at 5, but doors close at 6 -
 6. Questions - 15 min
 7. Summary - 15 min 
 
-
-
-1. Start at 9:00
-2. Breakfast until 9:30
-3. Introduction: 9:30 - 9:45
-4. Prerequisites: 9:45 - 10:00
-5. Container theory and hands-on work: 10:00 - 13:00
-6. Lunch: 13:00 - 14:00
-7. Container orchestration and hands-on work: 14:00 - 17:00
-8. Conclusion and questions
-
 ## Section 1:
 
 

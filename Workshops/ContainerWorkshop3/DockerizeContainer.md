@@ -51,4 +51,4 @@ docker run demo_node_todo
 When you can successfully launch the container & POST "todos" to your app - congratulations!! You've successfully containerized an application. :-)
 
 
-Continue to [Part 10](Part10.md)
+Continue to [Part 10](ContainerSummary.md)

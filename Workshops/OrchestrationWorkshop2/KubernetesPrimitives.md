@@ -186,4 +186,4 @@ the NodePort service will route. You can then contact the NodePort service, from
   NodePort and ClusterIP, will automatically be created.
 
 
-Continue to [Part 15](Part15.md)
+Continue to [Part 4](Minikube.md)
