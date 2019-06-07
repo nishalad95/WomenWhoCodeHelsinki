@@ -47,3 +47,5 @@ you can set up a backing plan for the data.
 ![alt text](../../InstructorNotes/Images/kubernetes_architecture.png)
 
 Continue to [Part 6](YamlFiles.md)
+
+>>>>>>> 058a838... add files:Workshops/ContainerWorkshop7/Part16.md
