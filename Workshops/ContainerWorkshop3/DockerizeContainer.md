@@ -11,7 +11,7 @@ Don't worry if you're not familiar with Nodejs, we're here to help!
 - Start by cloning this repo to get access to the node app
 
 ```bash
-git clone https://github.com/nishalad95/WHCHelsinkiWorkshop.git
+git clone https://github.com/nishalad95/WHCHelsinkiWorkshop
 ```
 
 - Change directory to the node app
@@ -46,9 +46,11 @@ docker run demo_node_todo
 
 <details><summary>ANSWER: how to run the app</summary>
 <p>
+  
 ```bash
-$ docker run --rm  -p3000:3000 node_todo
+$ docker run --rm  -p3000:3000 demo_node_todo
 ```
+
 </p>
 </details>
 
@@ -57,9 +59,11 @@ $ docker run --rm  -p3000:3000 node_todo
 
 <details><summary>ANSWER: how to curl the todo app</summary>
 <p>
+  
 ```bash
 $ curl --header "Content-Type: application/json" -X POST --data '{"learn":"docker"}' localhost:3000/todos
 ```
+
 </p>
 </details>
 
