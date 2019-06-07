@@ -103,7 +103,7 @@ To get out of the container environment back to where we were running the docker
 
 To find out more about run, use `docker run --help` to see a list of all flags it supports. As we proceed further, we'll see a few more variants of `docker run`.
 
-Before we move ahead though, let's quickly talk about deleting containers. We saw above that we can still see remnants of the container even after we've exited by running `docker ps -a`. Throughout this tutorial, you'll run docker run multiple times and leaving stray containers will eat up disk space. Hence, as a rule of thumb, I clean up containers once I'm done with them. To do that, you can run the `docker rm` command. Just copy the container IDs from above and paste them alongside the command.
+Before we move ahead though, let's quickly talk about deleting containers. We saw above that we can still see remnants of the container even after we've exited by running `docker ps -a`. Throughout this tutorial, you'll run docker run multiple times and leaving stray containers will eat up disk space. This is done so that it has the necessary images in the local ‘cache’. This is really useful because when you want to pull an image that depends on those, or when you are building an image, all of these are locally available. The bad news is that this eats up disk space! Hence, as a rule of thumb, I clean up containers once I'm done with them. To do that, you can run the `docker rm` command. Just copy the container IDs from above and paste them alongside the command.
 
 ```bash
 $ docker rm 305297d7a235 ff0a5c3750b9
