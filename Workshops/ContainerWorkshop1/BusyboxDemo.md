@@ -4,12 +4,6 @@ Let's get started by running a small container locally and then we'll explain th
 
 There are no specific skills needed for this tutorial beyond a basic comfort with the command line and using a text editor. Prior experience in developing web applications will be helpful but is not required. Follow the instructions below and execute the code blocks in your terminal.
 
-## Prerequsities:
-
-- Access to the VM (Or have docker installed locally on your laptop)
-- Set up a [Dockerhub](https://hub.docker.com/) account
-- Open up a terminal
-
 
 Once you are done installing Docker, test your Docker installation by running the following:
 
