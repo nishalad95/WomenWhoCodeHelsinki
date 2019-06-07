@@ -2,6 +2,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var app = express();
 
+app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json());
 
 var db = [];
@@ -44,7 +45,7 @@ app.post("/todos/:todoID/done", (req, res, next) => {
 
 app.post("/todos", (req, res, next) => {
     let body = {
-        action:req.body.action,
+        action:req.body,
         id:idcount++,
         status:"TODO"
     };
