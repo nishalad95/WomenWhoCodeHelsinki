@@ -1,0 +1,3 @@
+username=gwc-114
+password=!]ZG0&r$fsXE5+QM:lZ6
+lab_machine_ip=129.146.65.197

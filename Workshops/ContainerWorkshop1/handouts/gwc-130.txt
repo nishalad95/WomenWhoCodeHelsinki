@@ -1,0 +1,3 @@
+username=gwc-130
+password=.[sM39SV#w-V1i}Fc6>{
+lab_machine_ip=129.146.101.181

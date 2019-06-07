@@ -1,0 +1,3 @@
+username=gwc-116
+password=R3pe<n}H#Iv;mm5{0yBs
+lab_machine_ip=129.146.55.115

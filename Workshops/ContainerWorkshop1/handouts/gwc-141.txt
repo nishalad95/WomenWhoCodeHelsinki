@@ -1,0 +1,3 @@
+username=gwc-141
+password=4Z$[}mB12<olLy_Ed!3e
+lab_machine_ip=129.146.51.154

@@ -1,0 +1,3 @@
+username=gwc-137
+password=-$!mAguoBnu[z#:!9uE3
+lab_machine_ip=129.146.104.22

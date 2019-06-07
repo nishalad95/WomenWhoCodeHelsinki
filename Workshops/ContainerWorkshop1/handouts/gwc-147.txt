@@ -1,0 +1,3 @@
+username=gwc-147
+password=-G8H)Amh<I2B_4Kxr[X}
+lab_machine_ip=129.146.64.57

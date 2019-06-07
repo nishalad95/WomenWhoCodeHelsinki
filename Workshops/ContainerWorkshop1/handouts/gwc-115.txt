@@ -1,0 +1,3 @@
+username=gwc-115
+password=psziKJ>9hZm;;!zO9[NG
+lab_machine_ip=129.146.98.155

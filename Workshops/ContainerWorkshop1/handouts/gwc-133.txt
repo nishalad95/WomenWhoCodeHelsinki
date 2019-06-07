@@ -1,0 +1,3 @@
+username=gwc-133
+password=e[6]l-Jxz)Mu_UP(um[Q
+lab_machine_ip=129.146.106.252

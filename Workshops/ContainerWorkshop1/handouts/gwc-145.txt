@@ -1,0 +1,3 @@
+username=gwc-145
+password=(3tpGc4-rTIE2m7Of$>D
+lab_machine_ip=129.146.181.131

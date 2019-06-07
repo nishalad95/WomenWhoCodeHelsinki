@@ -85,11 +85,15 @@ requirements and note it down.
 Now that your user account is accessible, let's log into the provided VM.
 
 To access your cloud-based development environment you'll need a VNC client
-on your laptop.  You can use whatever you have previously installed or you can
-use the VNC Viewer for Chrome that is extremely easy to install through the
-Chrome Web Store:
+on your laptop. 
+
+Install VNCViewer for your own operating system from: https://www.realvnc.com/en/connect/download/viewer/
+ 
+Or you can use the VNC Viewer for Chrome that is extremely easy to install through the
+Chrome Web Store (but it's buggier):
 
 https://chrome.google.com/webstore/detail/vnc%C2%AE-viewer-for-google-ch/iabmpiboiopbgfabjmgeedhcmjenhbla/related
+
 
 ![user input](../../InstructorNotes/Images/setup/userinput.png) Log into your VM using the provided IP
 Address and password.  The VNC port is "**5903**" so the server address you'll need

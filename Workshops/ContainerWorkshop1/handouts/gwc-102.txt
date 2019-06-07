@@ -1,0 +1,3 @@
+username=gwc-102
+password=d7K7uN(Vw!>YLR:rH>Ba
+lab_machine_ip=129.146.50.155

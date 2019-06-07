@@ -1,0 +1,3 @@
+username=gwc-107
+password=Kyr7QJ10HE1Rmit8-n{T
+lab_machine_ip=129.146.0.94

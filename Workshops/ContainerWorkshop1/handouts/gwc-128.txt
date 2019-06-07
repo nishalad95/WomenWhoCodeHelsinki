@@ -1,0 +1,3 @@
+username=gwc-128
+password=hN.c$6C;QUllNe#MH0N_
+lab_machine_ip=129.146.67.93

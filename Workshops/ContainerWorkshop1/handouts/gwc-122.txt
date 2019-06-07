@@ -1,0 +1,3 @@
+username=gwc-122
+password=xIDyTJ0slYLX56i8{vFl
+lab_machine_ip=129.146.99.5

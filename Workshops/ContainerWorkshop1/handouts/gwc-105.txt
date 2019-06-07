@@ -1,0 +1,3 @@
+username=gwc-105
+password=]{D;([ySo-):v1Sw[6]7
+lab_machine_ip=129.146.110.219

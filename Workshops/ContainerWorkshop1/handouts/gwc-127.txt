@@ -1,0 +1,3 @@
+username=gwc-127
+password=(NB4WCqgC[<XoI+L{MnT
+lab_machine_ip=129.146.179.125

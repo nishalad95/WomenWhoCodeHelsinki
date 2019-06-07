@@ -1,0 +1,3 @@
+username=gwc-103
+password=+ezb;(Q]lcWYT2zfvny0
+lab_machine_ip=129.146.49.20

@@ -1,0 +1,3 @@
+username=gwc-118
+password=26Njrp+02ryd!HK;hR&{
+lab_machine_ip=129.146.109.83
