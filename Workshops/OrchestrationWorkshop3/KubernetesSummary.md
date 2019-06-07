@@ -1,2 +1,2 @@
-# Part 18: Summary of Orchestration Workshop
+# Part 7: Summary of Orchestration Workshop
 

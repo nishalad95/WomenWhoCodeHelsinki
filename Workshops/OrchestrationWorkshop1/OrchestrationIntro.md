@@ -1,4 +1,4 @@
-# Part 12: Orchestration
+# Part 1: Orchestration
 
 ## What is orchestration and what is this thing called Kubernetes?
 

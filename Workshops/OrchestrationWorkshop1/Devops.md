@@ -1,4 +1,4 @@
-# Part 13: Devops
+# Part 2: Devops
 
 #### The traditional approach
 Previously, most companies separated their software teams into developers, testers, system administrators, and so on.

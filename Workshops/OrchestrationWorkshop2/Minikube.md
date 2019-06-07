@@ -1,4 +1,4 @@
-# Part 15: Launching a Kubernetes Cluster with minikube
+# Part 4: Launching a Kubernetes Cluster with minikube
 
 
 Minikube allows you to try out Kubernetes on your local machine. It spins up a VM in which it runs a single-node Kubernetes cluster.
