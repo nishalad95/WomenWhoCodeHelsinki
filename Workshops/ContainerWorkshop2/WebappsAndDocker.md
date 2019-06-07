@@ -74,7 +74,7 @@ ubuntu                          latest              e9ae3c220b23        7 weeks 
 busybox                         latest              c51f86c28340        9 weeks ago         1.109 MB
 ```
 
-The above gives a list of images that I've pulled from the registry, along with ones created muself. The `TAG` refers to a particular snapshot of the image and the `IMAGE ID` is the corresponding unique identifier for that image.
+The above gives a list of images that I've pulled from the registry. The `TAG` refers to a particular snapshot of the image and the `IMAGE ID` is the corresponding unique identifier for that image.
 
 For simplicity, you can think of an image similar to a git repository - images can be committed with changes and have multiple versions. If you don't provide a specific version number, the client defaults to latest. For example, you can pull a specific version of ubuntu image.
 
