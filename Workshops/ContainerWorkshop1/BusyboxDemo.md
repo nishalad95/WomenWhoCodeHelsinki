@@ -29,7 +29,7 @@ $ docker pull busybox
 
 > _Note: Depending on how you've installed docker on your system, you might see a permission denied error after running the above command. If you're on a Mac, make sure the Docker engine is running. If you're on Linux, then prefix your docker commands with sudo._
 
-The `pull` command fetches the busybox image from the Docker registry and saves it to our system. You can use the `docker images` command to see a list of all images on your system.
+The `pull` command fetches the busybox image from the Docker registry and saves it to our system. The Docker registry is Dockerhub, where you set up your accounts, and it is like a github full of docker images you can pull and use to build your applications. You can use the `docker images` command to see a list of all images on your system.
 
 ```bash
 $ docker images
