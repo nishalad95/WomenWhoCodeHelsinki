@@ -11,7 +11,7 @@ Don't worry if you're not familiar with Nodejs, we're here to help!
 - Start by cloning this repo to get access to the node app
 
 ```bash
-git clone git@github.com:nishalad95/WHCHelsinkiWorkshop.git
+git clone https://github.com/nishalad95/WHCHelsinkiWorkshop.git
 ```
 
 - Change directory to the node app
