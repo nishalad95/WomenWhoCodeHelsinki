@@ -56,4 +56,4 @@ There are a mixture of commands and theory within this workshop, so you can foll
     * Intro to Kubernetes
     * Minikube example
 
-Click [here](https://github.com/nishalad95/WHCHelsinkiWorkshop/blob/master/Workshops/ContainerWorkshop1/Part1.md) to begin!
+Click [here](https://github.com/nishalad95/WHCHelsinkiWorkshop/blob/master/Workshops/ContainerWorkshop1/ContainerTheoryPart1.md) to begin!
