@@ -37,18 +37,26 @@ ESC
 - Use the `docker build` and `docker run` commands to test if you have successfully containerized the app. You can tag your app by doing the following:
 
 ```bash
-docker build -t demo_node_todo
+docker build -t demo_node_todo .
 ```
 ```bash
 docker run demo_node_todo
 ```
 
-
-
 >_Debug: Is there anything missing?_
 
+<details><summary>HIDDEN TIP: CURL todo webapp</summary>
+<p>
+
+```bash
+$ curl --header "Content-Type: application/json" -X POST --data '{"learn":"docker"}' localhost:3000/todos
+```
+
+</p>
+</details>
 
 When you can successfully launch the container & POST "todos" to your app - congratulations!! You've successfully containerized an application. :-)
 
+You can check out more docker commands in the docker cheat sheet: [Docker Cheatsheet](Dockercheatsheet.md)
 
 Continue to [Part 10](ContainerSummary.md)
