@@ -63,22 +63,22 @@ Your workshop instructor will provide you with the following:
 Before we get started you'll need to log into the OCI account you've been
 provided to change your password from the temporary initial password.
 
-![user input](images/userinput.png) Log into the OCI console in *Ashburn*
+![user input](../../InstructorNotes/Images/setup/userinput.png) Log into the OCI console in *Ashburn*
 specifying the "**cloudnative-devrel**" tenancy.  
 
 https://console.us-ashburn-1.oraclecloud.com
 
-![Login Tenancy](images/login.png)
+![Login Tenancy](../../InstructorNotes/Images/setup/login.png)
 
-![user input](images/userinput.png) Provide your OCI username along with the
+![user input](../../InstructorNotes/Images/setup/userinput.png) Provide your OCI username along with the
 initial password you were provided.  
 
-![Login User](images/login-user.png)
+![Login User](../../InstructorNotes/Images/setup/login-user.png)
 
-![user input](images/userinput.png) Provide a new password satisfying the
+![user input](../../InstructorNotes/Images/setup/userinput.png) Provide a new password satisfying the
 requirements and note it down.
 
-![Login New Password](images/login-new-password.png)
+![Login New Password](../../InstructorNotes/Images/setup/login-new-password.png)
 
 ## Configuring your Environment
 
@@ -91,18 +91,13 @@ Chrome Web Store:
 
 https://chrome.google.com/webstore/detail/vnc%C2%AE-viewer-for-google-ch/iabmpiboiopbgfabjmgeedhcmjenhbla/related
 
-> NOTE: If you're curious about how to setup your own machine to build functions
-> and deploy them to Oracle Functions you can follow the instructions in the
-> [Quick Start
-> Guide](https://www.oracle.com/webfolder/technetwork/tutorials/infographics/oci_faas_gettingstarted_quickview/functions_quickview_top/functions_quickview/index.html#)
-
-![user input](images/userinput.png) Log into your VM using the provided IP
+![user input](../../InstructorNotes/Images/setup/userinput.png) Log into your VM using the provided IP
 Address and password.  The VNC port is "**5903**" so the server address you'll need
 to provide will look like `n.n.n.n:5903`
 
 Enter the provided VNC password "**workshop**" to complete your login.
 
-![vnc login](images/vnc-login.png)
+![vnc login](../../InstructorNotes/Images/setup/vnc-login.png)
 
 ## All Set!
 
