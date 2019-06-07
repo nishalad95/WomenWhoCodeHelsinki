@@ -1,4 +1,4 @@
-# Part 17: Deploying containers using YAML files
+# Part 6: Deploying containers using YAML files
 
 In this tutorial we'll be using a tool called curl. cURL is a command line tool for sending and getting data, it supports various
 data transfer protocols. It's kind of like a browser, but on the command line.

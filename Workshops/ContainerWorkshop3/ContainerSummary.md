@@ -24,3 +24,5 @@ Useful links for further info:
 
 
 We will shortly be moving onto Container Orchestration, with a short workshop on using Kubernetes.
+
+Continue to [Orchestration](../OrchestrationWorkshop1/OrchestrationIntro.md)
