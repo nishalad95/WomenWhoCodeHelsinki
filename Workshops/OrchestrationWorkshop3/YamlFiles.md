@@ -105,4 +105,4 @@ and any of the containers may be the one processing your request:
 $ curl localhost:300080
 ```
 
-Continue to [Part 7](KubernetesSummary.md)
+Continue to [Part 7](OrchestrationSummary.md)

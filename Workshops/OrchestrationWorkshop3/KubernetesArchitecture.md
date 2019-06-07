@@ -36,7 +36,7 @@ Every other node in the cluster runs two processes:
 
 #### KubeDNS
 
-The Kubernetes DNS service creates a DNS Pod and Service on the cluster in order for each individual container to tbe able
+The Kubernetes DNS service creates a DNS Pod and Service on the cluster in order for each individual container to be able
 to resolve DNS names by using the DNS Service's IP address.
 
 #### etcd
