@@ -44,6 +44,66 @@ For more background and information, see the quick (https://docs.microsoft.com/e
 ### Dockerhub account
 - Set up a [Dockerhub](https://hub.docker.com/) account
 
+### Connect to a pre-created user account with all requirements installed
 
+You have gone through the process of setting up your own OCI account and set up the infrastructure required to play around with containers, however we will also need to expose them to the outside world, which requires a little bit more setup on the Oracle Clould Infrastructure. However, to keep it simple, we pre-generated some user accounts for all of you that have everything set up to expose our apps to the Public Internet.
+
+Your workshop instructor will provide you with the following:
+
+1. **Workshop Participant Number**--a unique number that will be incorporated
+   into your user id
+2. OCI **Tenancy Name**--that you will use to log into an OCI cloud account
+   (it's "**cloudnative-devrel**"!)
+3. OCI **User Id/Password**--to enable you to log into the OCI Console and to
+   deploy functions
+4. **IP Address**--of your hosted development environment virtual machine
+5. **VNC Password**--to allow you to log into your hosted development virual
+   machine (it's "**workshop**"!)
+
+Before we get started you'll need to log into the OCI account you've been
+provided to change your password from the temporary initial password.
+
+![user input](images/userinput.png) Log into the OCI console in *Ashburn*
+specifying the "**cloudnative-devrel**" tenancy.  
+
+https://console.us-ashburn-1.oraclecloud.com
+
+![Login Tenancy](images/login.png)
+
+![user input](images/userinput.png) Provide your OCI username along with the
+initial password you were provided.  
+
+![Login User](images/login-user.png)
+
+![user input](images/userinput.png) Provide a new password satisfying the
+requirements and note it down.
+
+![Login New Password](images/login-new-password.png)
+
+## Configuring your Environment
+
+Now that your user account is accessible, let's log into the provided VM.
+
+To access your cloud-based development environment you'll need a VNC client
+on your laptop.  You can use whatever you have previously installed or you can
+use the VNC Viewer for Chrome that is extremely easy to install through the
+Chrome Web Store:
+
+https://chrome.google.com/webstore/detail/vnc%C2%AE-viewer-for-google-ch/iabmpiboiopbgfabjmgeedhcmjenhbla/related
+
+> NOTE: If you're curious about how to setup your own machine to build functions
+> and deploy them to Oracle Functions you can follow the instructions in the
+> [Quick Start
+> Guide](https://www.oracle.com/webfolder/technetwork/tutorials/infographics/oci_faas_gettingstarted_quickview/functions_quickview_top/functions_quickview/index.html#)
+
+![user input](images/userinput.png) Log into your VM using the provided IP
+Address and password.  The VNC port is "**5903**" so the server address you'll need
+to provide will look like `n.n.n.n:5903`
+
+Enter the provided VNC password "**workshop**" to complete your login.
+
+![vnc login](images/vnc-login.png)
+
+## All Set!
 
 Let's get started with our first tutorial [here](BusyboxDemo.md)! 
