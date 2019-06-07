@@ -46,4 +46,4 @@ you can set up a backing plan for the data.
 
 ![alt text](../../InstructorNotes/Images/kubernetes_architecture.png)
 
-Continue to [Part 17](Part17.md)
+Continue to [Part 6](YamlFiles.md)

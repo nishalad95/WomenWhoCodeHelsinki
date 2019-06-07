@@ -87,4 +87,4 @@ the day compared to their lunch, and evening sales.
 
 If you're interested you can find real-life use cases of various companies here: https://kubernetes.io/case-studies/.
 
-Continue to [Part 13](Part13.md)
+Continue to [Part 2](Devops.md)

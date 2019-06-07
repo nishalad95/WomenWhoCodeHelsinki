@@ -70,4 +70,4 @@ $ curl localhost
 ```
 TIP: Use **kubectl describe <object_type> <object_name>** to get a thorough description of an object.
 
-Continue to [Part 16](../ContainerWorkshop7/Part16.md)
+Continue to [Part 5](../OrchestrationWorkshop3/KubernetesArchitecture.md)

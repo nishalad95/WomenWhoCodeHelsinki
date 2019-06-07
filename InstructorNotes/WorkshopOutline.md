@@ -26,14 +26,16 @@ Eclipse Che development environments will be deployed to each participant on Ora
 
 ##### Workshop schedule:
 
-1. Start at 9:00
-2. Breakfast until 9:30
-3. Introduction: 9:30 - 9:45
-4. Prerequisites: 9:45 - 10:00
-5. Container theory and hands-on work: 10:00 - 13:00
-6. Lunch: 13:00 - 14:00
-7. Container orchestration and hands-on work: 14:00 - 17:00
-8. Conclusion and questions
+Starts at quarter to 10
+Training should end at 5, but doors close at 6 - 
+
+1. Prerequisites: 30 mins : 10:00 - 11:00 - mini break
+2. Container Theory and hands-on work - 11:00 - 13:00 - 
+3. Lunch - maybe half an hour - to an hour 
+4. Container  - 1:45 - 
+5. Kubernetes - 2:45 - 5:00
+6. Questions - 15 min
+7. Summary - 15 min 
 
 ## Section 1:
 

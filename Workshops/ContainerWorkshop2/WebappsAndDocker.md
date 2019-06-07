@@ -94,5 +94,5 @@ Then there are official and user images, which can be both base and child images
 
 * ___User images___ are images created and shared by users like you and me. They build on base images and add additional functionality. Typically, these are formatted as `user/image-name`.
 
-Continue to [Part 7](Part7.md)
+Continue to [Part 7](Dockerfiles.md)
 
