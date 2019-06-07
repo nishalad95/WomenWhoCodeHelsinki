@@ -39,19 +39,27 @@ ESC
 ```bash
 docker build -t demo_node_todo .
 ```
+
 ```bash
 docker run demo_node_todo
 ```
 
+<details><summary>ANSWER: how to run the app</summary>
+<p>
+```bash
+$ docker run --rm  -p3000:3000 node_todo
+```
+</p>
+</details>
+
+
 >_Debug: Is there anything missing?_
 
-<details><summary>HIDDEN TIP: CURL todo webapp</summary>
+<details><summary>ANSWER: how to curl the todo app</summary>
 <p>
-
 ```bash
 $ curl --header "Content-Type: application/json" -X POST --data '{"learn":"docker"}' localhost:3000/todos
 ```
-
 </p>
 </details>
 
@@ -59,4 +67,4 @@ When you can successfully launch the container & POST "todos" to your app - cong
 
 You can check out more docker commands in the docker cheat sheet: [Docker Cheatsheet](Dockercheatsheet.md)
 
-Continue to [Part 10](ContainerSummary.md)
+Or continue to [Part 10](ContainerSummary.md)

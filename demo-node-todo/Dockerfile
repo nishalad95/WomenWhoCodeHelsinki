@@ -1,4 +1,4 @@
-# 1) What base image will you use?
+# 1) What base image will you use? We're using node version: 10.15.3
 
 
 # Create the app directory
