@@ -50,10 +50,13 @@ There are a mixture of commands and theory within this workshop, so you can foll
 * Container Workshops:
     * Hello World with Busybox
     * Static sites & Dockerizing web app
-    * Building a more complex Dockerfile
+    * Dockerizing your Node App
+
 
 * Orchestration Workshop:
-    * Intro to Kubernetes
-    * Minikube example
+    * Intro to Orchestration
+    * Kubernetes Theory & Architecture
+    * Minikube examples
+
 
 Click [here](https://github.com/nishalad95/WHCHelsinkiWorkshop/blob/master/Workshops/ContainerWorkshop1/ContainerTheoryPart1.md) to begin!
