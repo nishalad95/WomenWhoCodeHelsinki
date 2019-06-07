@@ -91,11 +91,19 @@ Running the `run` command with the `-it` flags attaches us to an interactive tty
 
 > _Danger Zone: If you're feeling particularly adventurous you can try rm -rf bin in the container. Make sure you run this command in the container and not in your laptop/desktop. Doing this will not make any other commands like ls, echo work. Once everything stops working, you can exit the container (type exit and press Enter) and then start it up again with the docker run -it busybox sh command. Since Docker creates a new container every time, everything should start working again._
 
-To get out of the container environment back to where we were running the docker commands, just type `exit`. Only thing to note is that once you execture this command, your running container will be deleted, thus you will lose all the work you have done after starting it. 
+To check out how docker manages your container, leave the current docker container running and open a new tab in your terminal: `File > Open Tab` and run the command `docker ps`. This should output information about the docker container that you have just created:
+
+```
+docker ps
+CONTAINER ID        IMAGE               COMMAND             CREATED              STATUS              PORTS               NAMES
+3303eee5d2ac        busybox             "sh"                About a minute ago   Up About a minute                       gallant_nobel
+```
+
+To get out of the container environment back to where we were running the docker commands, just type `exit`. Only thing to note is that once you execute this command, your running container will be deleted, thus you will lose all the work you have done after starting it.
 
 To find out more about run, use `docker run --help` to see a list of all flags it supports. As we proceed further, we'll see a few more variants of `docker run`.
 
-Before we move ahead though, let's quickly talk about deleting containers. We saw above that we can still see remnants of the container even after we've exited by running `docker ps -a`. Throughout this tutorial, you'll run docker run multiple times and leaving stray containers will eat up disk space. Hence, as a rule of thumb, I clean up containers once I'm done with them. To do that, you can run the `docker rm` command. Just copy the container IDs from above and paste them alongside the command.
+Before we move ahead though, let's quickly talk about deleting containers. We saw above that we can still see remnants of the container even after we've exited by running `docker ps -a`. Throughout this tutorial, you'll run docker run multiple times and leaving stray containers will eat up disk space. This is done so that it has the necessary images in the local ‘cache’. This is really useful because when you want to pull an image that depends on those, or when you are building an image, all of these are locally available. The bad news is that this eats up disk space! Hence, as a rule of thumb, I clean up containers once I'm done with them. To do that, you can run the `docker rm` command. Just copy the container IDs from above and paste them alongside the command.
 
 ```bash
 $ docker rm 305297d7a235 ff0a5c3750b9

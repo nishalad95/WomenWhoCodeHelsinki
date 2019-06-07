@@ -18,9 +18,11 @@ $ docker run --rm prakhar1989/static-site
 
 Since the image doesn't exist locally, the client will first fetch the image from the registry and then run the image. If all goes well, you should see a `Nginx is running...` message in your terminal.
 
-How can we see the website? What port is it running on? And more importantly, how do we access the container directly from our host machine? Hit `Ctrl+C` to stop the container.
+How can we see the website? What port is it running on? And more importantly, how do we access the container directly from our host machine? Hit `Ctrl+C` to stop the container. 
 
-Well in this case, the client is not exposing any ports so we need to re-run the `docker run` command to publish ports. While we're at it, we should also find a way so that our terminal is not attached to the running container. This way, you can happily close your terminal and keep the container running. This is called __detached__ mode.
+This is where we have to talk about Container Networking. By default, when you create a container, it does not publish any of its ports to the outside world. To make a port available to services outside of Docker, or to Docker containers which are not connected to the container’s network, use the --publish or -p flag. This creates a firewall rule which maps a container port to a port on the Docker host.
+
+Well in our case, the client is not exposing any ports so we need to re-run the `docker run` command to publish ports. While we're at it, we should also find a way so that our terminal is not attached to the running container. This way, you can happily close your terminal and keep the container running. This is called __detached__ mode.
 
 ```bash
 $ docker run -d -P --name static-site prakhar1989/static-site
@@ -54,7 +56,7 @@ static-site
 
 To deploy this on a real server you would just need to install Docker, and run the above Docker command. Now that you've seen how to run a webserver inside a Docker image, you must be wondering - how do I create my own Docker image? This is the question we'll be exploring in the next section.
 
-#### Docker Images
+#### Docker Images
 
 We've looked at images before, but in this section we'll dive deeper into what Docker images are and build our own image! Lastly, we'll also use that image to run our application locally and finally deploy on Docker Hub to share! Let's get started.
 
