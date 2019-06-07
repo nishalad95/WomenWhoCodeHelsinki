@@ -52,7 +52,7 @@ Take a look at the code below:
 
 ```
 $ docker ps --format \
-	“table {{.Names}}\\t{{.Image}}\\t{{.Status}}”
+	"table {{.Names}}\\t{{.Image}}\\t{{.Status}}"
 
 NAMES			IMAGE		STATUS
 web			nginx		Up 20 minutes
