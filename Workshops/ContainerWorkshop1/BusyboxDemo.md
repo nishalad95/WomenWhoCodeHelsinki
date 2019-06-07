@@ -99,7 +99,7 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 3303eee5d2ac        busybox             "sh"                About a minute ago   Up About a minute                       gallant_nobel
 ```
 
-To get out of the container environment back to where we were running the docker commands, just type `exit`. Only thing to note is that once you execute this command, your running container will be deleted, thus you will lose all the work you have done after starting it. Start the container again to see how else you can remove your container.
+To get out of the container environment back to where we were running the docker commands, just type `exit`. Only thing to note is that once you execute this command, your running container will be deleted, thus you will lose all the work you have done after starting it.
 
 To find out more about run, use `docker run --help` to see a list of all flags it supports. As we proceed further, we'll see a few more variants of `docker run`.
 
