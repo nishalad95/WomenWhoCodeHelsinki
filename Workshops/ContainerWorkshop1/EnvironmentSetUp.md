@@ -2,8 +2,6 @@
 
 ## Prerequisites
 
-### VNC installation
-
 ### SSH KeyGen
 
 ##### Create an SSH key pair for Windows
