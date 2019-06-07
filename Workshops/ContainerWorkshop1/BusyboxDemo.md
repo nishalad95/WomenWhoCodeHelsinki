@@ -91,6 +91,8 @@ Running the `run` command with the `-it` flags attaches us to an interactive tty
 
 > _Danger Zone: If you're feeling particularly adventurous you can try rm -rf bin in the container. Make sure you run this command in the container and not in your laptop/desktop. Doing this will not make any other commands like ls, echo work. Once everything stops working, you can exit the container (type exit and press Enter) and then start it up again with the docker run -it busybox sh command. Since Docker creates a new container every time, everything should start working again._
 
+To get out of the container environment back to where we were running the docker commands, just type `exit`. Only thing to note is that once you execture this command, your running container will be deleted, thus you will lose all the work you have done after starting it. 
+
 To find out more about run, use `docker run --help` to see a list of all flags it supports. As we proceed further, we'll see a few more variants of `docker run`.
 
 Before we move ahead though, let's quickly talk about deleting containers. We saw above that we can still see remnants of the container even after we've exited by running `docker ps -a`. Throughout this tutorial, you'll run docker run multiple times and leaving stray containers will eat up disk space. Hence, as a rule of thumb, I clean up containers once I'm done with them. To do that, you can run the `docker rm` command. Just copy the container IDs from above and paste them alongside the command.
@@ -108,6 +110,3 @@ $ docker rm $(docker ps -a -q -f status=exited)
 This command deletes all containers that have a status of exited. In case you're wondering, the -q flag, only returns the numeric IDs and -f filters output based on conditions provided.
 
 Continue to [Part 5](DockerArchitecture.md)
-
-
-
