@@ -39,8 +39,13 @@ ssh-keygen -t rsa -b 2048
 
 For more background and information, see the quick (https://docs.microsoft.com/en-us/azure/virtual-machines/linux/mac-create-ssh-keys) or detailed (https://docs.microsoft.com/en-us/azure/virtual-machines/linux/create-ssh-keys-detailed) steps to create SSH keys using ssh-keygen.
 
+
+### OCI Environment Setup
+
+Click [here](mimmitkoodaa.pdf) to view how to setup your environment.
+
 ### Dockerhub account
-- Set up a [Dockerhub](https://hub.docker.com/) account
+- Set up a [Dockerhub](../../InstructorNotes/Images/mimmitkoodaa.pdf) account
 
 ### Connect to a pre-created user account with all requirements installed
 
