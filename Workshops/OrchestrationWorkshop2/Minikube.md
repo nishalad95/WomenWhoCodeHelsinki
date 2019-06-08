@@ -38,7 +38,7 @@ $ kubectl run nginx-deployment --image=nginx --port=80
 
 To check the status of the deployment use the following command:
 ```bash
-$ kubectl get nginx-deployment
+$ kubectl describe deployment nginx-deployment
 NAME                READY      UP-TO-DATE       AVAILABLE     AGE
 nginx-deployment    1/1        1                1             2m          
 ```
@@ -60,7 +60,7 @@ nginx-deployment-668774d484-zkbzc    1/1        Running      0            3m40s
 Now that the container is running we need a way of accessing it. We can use the NodePort service which is going to open
 a port to the container:
 ```bash
-$ kubectl expose deployment first-deployment --port=80 --type=NodePort
+$ kubectl expose deployment nginx-deployment --port=80 --type=NodePort
 ```
 
 You should be able to curl the container:
