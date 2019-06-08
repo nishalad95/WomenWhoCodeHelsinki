@@ -45,7 +45,7 @@ For more background and information, see the quick (https://docs.microsoft.com/e
 Click [here](mimmitkoodaa.pdf) to view how to setup your environment.
 
 ### Dockerhub account
-- Set up a [Dockerhub](hub.docker.com) account
+- Set up a [Dockerhub](https://hub.docker.com/signup) account
 
 ### Connect to a pre-created user account with all requirements installed
 
