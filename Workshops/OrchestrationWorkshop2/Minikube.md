@@ -57,6 +57,11 @@ nginx-deployment-668774d484-zkbzc    1/1        Running      0            3m40s
 ```
 
 #### Step 3: Deploy a service
+
+To enable the NGINX Ingress controller, run the following command:
+
+```minikube addons enable ingress```
+
 Now that the container is running we need a way of accessing it. We can use the NodePort service which is going to open
 a port to the container:
 ```bash
