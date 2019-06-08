@@ -1,5 +1,13 @@
 # Part 6: Deploying containers using YAML files
 
+Before we dive into this, let's try and have a look at a more interactive way of managing our kubernetes cluster. Kubernetes offers a dashboard which you can use to view all the primitives that you have created and manage them. To start the dashboard with minikube, use the following command:
+
+```minikube dashboard```
+
+And follow the link that is outputted by the command. This might take a little to start up.
+
+Play around a little bit with the dashboard and view the deployments that you have already created.
+
 In this tutorial we'll be using a tool called curl. cURL is a command line tool for sending and getting data, it supports various
 data transfer protocols. It's kind of like a browser, but on the command line.
 
